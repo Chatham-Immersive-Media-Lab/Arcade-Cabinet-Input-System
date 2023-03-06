@@ -1,0 +1,161 @@
+{
+    "name": "Arcade Stick Input Actions",
+    "maps": [
+        {
+            "name": "Arcade Stick Map",
+            "id": "a993602f-19ad-4494-8ba0-6c2226252a81",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "8c58715a-f64e-465c-8862-9198ae746f44",
+                    "expectedControlType": "Vector2",
+                    "processors": "StickDeadzone(min=0.125,max=0.925)",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Action",
+                    "type": "Button",
+                    "id": "ef6f1b3a-f81c-4a51-99f4-94bf1e413add",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OnePlayer",
+                    "type": "Button",
+                    "id": "396471e5-eddb-4d50-8cf7-11d0612e5c8e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "TwoPlayer",
+                    "type": "Button",
+                    "id": "3ea5528b-30fd-4f75-bb36-9476e40e51f4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "556645b8-2a6d-430c-a84d-fad28d9c01a4",
+                    "path": "<ArcadeStickHID>/bluestick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Blue",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "09cae12f-42b4-421d-a6ff-b45ffb8ce68f",
+                    "path": "<ArcadeStickHID>/redstick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Red",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d98b23ec-1045-4b80-88c8-4986392e10b6",
+                    "path": "<ArcadeStickHID>/blueaction",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Blue",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d55d9667-57d4-406c-b480-2b723b89e70c",
+                    "path": "<ArcadeStickHID>/redaction",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Red",
+                    "action": "Action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "258d1fd1-a3ea-4dd8-b4a0-0c28412a3f95",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Blue",
+                    "action": "OnePlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0271b941-66c7-4f68-abaf-e7cc2811f460",
+                    "path": "<ArcadeStickHID>/oneplayer",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Red",
+                    "action": "OnePlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2604ba58-f8e1-4740-99d9-13f3a6a142f2",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Blue",
+                    "action": "TwoPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1d84fa5b-ca58-4016-838c-4da98a0713f4",
+                    "path": "<ArcadeStickHID>/twoplayer",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Red",
+                    "action": "TwoPlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Blue",
+            "bindingGroup": "Blue",
+            "devices": [
+                {
+                    "devicePath": "<ArcadeStickHID>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Red",
+            "bindingGroup": "Red",
+            "devices": [
+                {
+                    "devicePath": "<ArcadeStickHID>",
+                    "isOptional": true,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
