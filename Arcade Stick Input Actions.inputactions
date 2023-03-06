@@ -59,7 +59,7 @@
                     "id": "09cae12f-42b4-421d-a6ff-b45ffb8ce68f",
                     "path": "<ArcadeStickHID>/redstick",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "InvertVector2",
                     "groups": "Red",
                     "action": "Move",
                     "isComposite": false,
