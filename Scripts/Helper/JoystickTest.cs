@@ -10,7 +10,6 @@ public class JoystickTest : MonoBehaviour
     public Vector2 stick;
     private PlayerInputDeviceSetter _playerInputSetter;
 
-    private bool inputEnabled;
     //This example will use the PlayerInput behaviour "Invoke Unity Events".
 
     //Note that Red's input has been inverted in the ActionMap setup.
@@ -22,7 +21,6 @@ public class JoystickTest : MonoBehaviour
     private void Awake()
     {
         _playerInputSetter = GetComponent<PlayerInputDeviceSetter>();
-        inputEnabled = false;
     }
 
 
